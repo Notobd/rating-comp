@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="rating">
+        <!-- Rating state start -->
+        <img src="/images/icon-star.svg" alt="star" class="star-img" />
+
+        <div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="buttons">
+          <!-- <div class="child"><button>1</button></div>
+          <div class="child"><button>2</button></div>
+          <div class="child"><button>3</button></div>
+          <div class="child"><button>4</button></div>
+          <div class="child"><button>5</button></div> -->
+          <button class="child">1</button>
+          <button class="child">2</button>
+          <button class="child">3</button>
+          <button class="child">4</button>
+          <button class="child">5</button>
+        </div>
+        <button class="sub-but">SUBMIT</button>
+        <!-- Rating state end -->
+      </div>
+      <div class="modal hidden">
+        <div class="thank-you">
+          <!-- Thank you state start -->
+          <img
+            src="/images/illustration-thank-you.svg"
+            alt="tahnk-you"
+            class="thank-img"
+          />
+          <p class="selection">You selected out of 5</p>
+          <h2>Thank you!</h2>
+          <!-- Add rating here -->
+
+          <p class="remark">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+        <!-- Thank you state end -->
+      </div>
+      <div class="overlay hidden"></div>
+      <script src="index.js"></script>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

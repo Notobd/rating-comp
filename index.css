@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(213, 19%, 18%);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 90;
+  font-style: normal;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.star-img,
+.thank-img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.child {
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: hsl(217, 12%, 63%);
+  outline: none;
+  border: none;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.child:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.child:active {
+  background-color: hsl(25, 97%, 53%);
+}
+.sub-but {
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.sub-but:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.sub-but:focus {
+  outline: none;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 30px;
+  /* position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 6rem;
+  border-radius: 5px;
+  z-index: 10; */
+}
+
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  padding: 6rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .thank-img {
+    width: 100px;
+  }
+  .star-img {
+    width: 50px;
+  }
+
+  h1 {
+    color: hsl(0, 0%, 100%);
+  }
+  h1 + p {
+    color: hsl(217, 12%, 63%);
+    width: 38ch;
+  }
+  .sub-but {
+    width: 100%;
+  }
+  .selection {
+    color: hsl(25, 97%, 70%);
+    background-color: hsl(217, 12%, 25%);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+  h2 {
+    color: hsl(0, 0%, 100%);
+  }
+  .remark {
+    text-align: center;
+    width: 36ch;
+    color: hsl(217, 12%, 63%);
+  }
+}
