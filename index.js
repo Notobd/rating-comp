@@ -32,8 +32,8 @@ ratingBtn.forEach(function (btn) {
 
 //submit button funtion
 const submit = function () {
-  hide.classList.remove('hidden');
-  overlay.classList.remove('hidden');
+  hide.classList.toggle('hidden');
+  overlay.classList.toggle('hidden');
   text.textContent = `You selected ${ratingMark} out of 5`;
 };
 subBtn.addEventListener('click', submit);
@@ -41,7 +41,7 @@ subBtn.addEventListener('click', submit);
 //esc to close overlay
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !hide.classList.contains('.hidden')) {
-    hide.classList.add('hidden');
-    overlay.classList.add('hidden');
+    hide.classList.toggle('hidden');
+    overlay.classList.toggle('hidden');
   }
 });
